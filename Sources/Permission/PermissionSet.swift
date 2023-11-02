@@ -22,6 +22,8 @@
 // SOFTWARE.
 //
 
+import ObjectiveC
+
 open class PermissionSet {
 
     /// The permissions in the set.
@@ -124,7 +126,7 @@ extension PermissionSet: CustomStringConvertible {
     }
 }
 
-public protocol PermissionSetDelegate: class {
+public protocol PermissionSetDelegate: AnyObject {
     /**
      Tells the delegate that the specified permission has been requested.
      
